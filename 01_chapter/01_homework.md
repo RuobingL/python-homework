@@ -88,6 +88,7 @@ def calculate(self, a, operator, b):
         '*': lambda x, y: x * y,
         '/': lambda x, y: x / y
     }[operator](a, b)
+
     return res
 ```
 
@@ -139,7 +140,7 @@ def lowercaseToUppercase(self, character):
     return chr(ord('A') - ord('a') + ord(character))
 ```
 
-## 5. 反转一个三位整数
+## 5. LintCode_37 反转一个三位整数
 **描述：**
 反转一个只有3位数的整数。
 
