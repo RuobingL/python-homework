@@ -165,7 +165,7 @@ def reverseInteger(self, number):
     """
 ```
 
-## 6. LintCode_FIZZ Buzz 问题
+## 6. LintCode_9 Fizz Buzz 问题
 **描述：**
 - 如果这个数被3整除，打印fizz.
 - 如果这个数被5整除，打印buzz.
