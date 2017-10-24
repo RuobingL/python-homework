@@ -1,4 +1,4 @@
-# python-homework
+# python-homework 阶梯作业
 - [第一章课后作业 Python 基础知识入门 Introduction to Python](https://github.com/yeshenlin/python-homework/blob/master/01_chapter/01_homework.md)
 - 第二章课后作业 函数与类 Function & Class
 - 第三章课后作业 线性数据结构 I Linear Data Structure I

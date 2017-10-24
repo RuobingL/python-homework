@@ -1,4 +1,4 @@
-# 第一次课的作业
+# 阶梯训练 Part I Variable & Control flow
 ## 1. LintCode_479 数组第二大数
 **题目描述**:
 
