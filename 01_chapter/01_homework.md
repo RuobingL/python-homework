@@ -200,3 +200,77 @@ def fizzBuzz(self, n):
 
     return res
 ```
+
+## 7. LintCode_449 字符串转整数
+**描述：**
+```
+将字符转换为一个整数。你可以假设字符是ASCII码，也就是说转换后的整数在0~255之间。
+```
+
+**样例:**
+```
+给出 a, 返回 97。
+给出 %, 返回 37。
+```
+
+**Code:**
+```
+def charToInteger(self, character):
+    # write your code here
+    return ord(character)
+```
+
+## 8. LintCode_146 大小写转换II
+**描述：**
+```
+将一个字符串中的小写字母转换为大写字母。忽略其他不是字母的字符。
+```
+
+**样例：**
+```
+给出 "abc", 返回 "ABC".
+
+给出 "aBc", 返回 "ABC".
+
+给出 "abC12", 返回 "ABC12".
+```
+
+**Code:**
+```
+def lowercaseToUppercase2(self, str):
+    return str.upper()
+```
+
+## 9. LintCode_627 最长回文串
+**描述：**
+```
+给出一个包含大小写字母的字符串。求出由这些字母构成的最长的回文串的长度是多少。
+
+数据是大小写敏感的，也就是说，"Aa" 并不会被认为是一个回文串。
+```
+
+**样例：**
+```
+给出 s = "abccccdd" 返回 7
+
+一种可以构建出来的最长回文串方案是 "dccaccd"。
+```
+
+**Code：**
+```
+def longestPalindrome(self, s):
+    if s == '':
+        return 0
+
+    count_dict = {}
+    for item in s:
+        if item not in count_dict:
+            count_dict[item] = True
+        else:
+            del count_dict[item]
+
+    if len(count_dict) > 0:
+        return len(s) - len(count_dict) + 1
+    else:
+        return len(s) - len(count_dict)
+```
