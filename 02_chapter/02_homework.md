@@ -283,3 +283,35 @@ parkVehicle("Bus_1") // return true
 
 
 **Code:**
+
+## 7. lintCode_239 方程的根
+**描述：**
+```
+给一个方程: ax2 + bx + c = 0. 求根。
+
+ 如果方程有两个根，就返回一个包含两个根的数组/列表。
+ 如果方程只有一个根，就返回一个包含一个跟的数组/列表。
+ 如果方程没有根，就返回一个空数组/列表。
+```
+
+**样例：**
+```
+给出 a = 1, b = -2, c = 1. 返回 [1].
+
+给出 a = 1, b = -3, c = 2. 返回 [1, 2]. 第一个数应比第二个数小。
+
+给出 a = 1, b = 1, c = 1. 返回 [].
+```
+
+**Code:**
+```
+def rootOfEquation(self, a, b, c):
+    delta_sqrt = b * b - 4 * a * c
+    if delta_sqrt < 0:
+        return []
+    elif delta_sqrt == 0:
+        return [-b / (2.0 * a)]
+    else:
+        delta = math.sqrt(delta_sqrt)
+        return sorted([(-b - delta) / (2.0 * a), (-b + delta) / (2.0 * a)])
+```
