@@ -13,4 +13,7 @@ class Solution:
 if __name__ == '__main__':
     so = Solution()
 
-    print so.countCharacters('abca')
+    nums = []
+    nums.extend([0, 1])
+    print nums
+
