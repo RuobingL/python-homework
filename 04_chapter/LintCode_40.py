@@ -18,3 +18,8 @@ class MyQueue:
     def pop(self):
         self.adjust()
         return self.stack2.pop()
+
+if __name__ == '__main__':
+    l1 = [1,2,3]
+    l2 = [3,4,5]
+    print  map(lambda x,y:x+y,l1,l2)
