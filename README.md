@@ -136,10 +136,10 @@
 
 课前预习资料：
 - 预习Tutorial相关章节：
- - https://docs.python.org/2.7/library/queue.html#module-Queue 进一步了解Python提供的Queue
- - https://docs.python.org/2.7/library/threading.html#thread-objects
+  - https://docs.python.org/2.7/library/queue.html#module-Queue 进一步了解Python提供的Queue
+  - https://docs.python.org/2.7/library/threading.html#thread-objects
 - 其他阅读材料：
- - http://agiliq.com/blog/2013/10/producer-consumer-problem-in-python/
- - http://www.informit.com/articles/article.aspx?p=1850445&seqNum=8
+  - http://agiliq.com/blog/2013/10/producer-consumer-problem-in-python/
+  - http://www.informit.com/articles/article.aspx?p=1850445&seqNum=8
 - 学有余力的同学推荐阅读（Redis目前一种key-value存储结构的主流NOSQL（非关系型数据库））：
- - https://redis.io/documentation
+  - https://redis.io/documentation
