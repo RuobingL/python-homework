@@ -253,3 +253,65 @@ class ShapeFactory:
             'Square': Square()
         }[shapeType]
 ```
+
+## 6. LintCode_498 停车场
+**描述：**
+```
+设计一个停车场
+1. 一共有n层，每层m列，每列k个位置
+2.停车场可以停摩托车，公交车，汽车
+3.停车位分别有摩托车位，汽车位，大型停车位
+4.每一列，摩托车位编号范围为[0,k/4),汽车停车位编号范围为[k/4,k/4*3),大型停车位编号范围为[k/4*3,k)
+5.一辆摩托车可以停在任何停车位
+6.一辆汽车可以停在一个汽车位或者大型停车位
+7.一辆公交车可以停在一列里的连续5个大型停车位。
+```
+
+**样例：**
+```
+level=1, num_rows=1, spots_per_row=11
+parkVehicle("Motorcycle_1") // return true
+parkVehicle("Car_1") // return true
+parkVehicle("Car_2") // return true
+parkVehicle("Car_3") // return true
+parkVehicle("Car_4") // return true
+parkVehicle("Car_5") // return true
+parkVehicle("Bus_1") // return false
+unParkVehicle("Car_5")
+parkVehicle("Bus_1") // return true
+```
+
+
+**Code:**
+
+## 7. lintCode_239 方程的根
+**描述：**
+```
+给一个方程: ax2 + bx + c = 0. 求根。
+
+ 如果方程有两个根，就返回一个包含两个根的数组/列表。
+ 如果方程只有一个根，就返回一个包含一个跟的数组/列表。
+ 如果方程没有根，就返回一个空数组/列表。
+```
+
+**样例：**
+```
+给出 a = 1, b = -2, c = 1. 返回 [1].
+
+给出 a = 1, b = -3, c = 2. 返回 [1, 2]. 第一个数应比第二个数小。
+
+给出 a = 1, b = 1, c = 1. 返回 [].
+```
+
+**Code:**
+```
+def rootOfEquation(self, a, b, c):
+    delta_sqrt = b * b - 4 * a * c
+    if delta_sqrt < 0:
+        return []
+    elif delta_sqrt == 0:
+        return [-b / (2.0 * a)]
+    else:
+        delta = math.sqrt(delta_sqrt)
+        return sorted([(-b - delta) / (2.0 * a), (-b + delta) / (2.0 * a)])
+```
